@@ -5,6 +5,82 @@
 }
 body{
     background-color: rgb(168, 163, 163);
+    section#login{
+        position: fixed;
+        z-index: 10;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition-duration: 0.5s;
+        div{
+            /* border: 1px solid red; */
+            height: 300px;
+            width: 350px;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+
+            form.login-form{
+                /* border: 2px solid red; */
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                background-color: rgb(74, 107, 95);
+
+                header{
+                    /* border: 1px solid red; */
+                    height: 50px;
+                    background-color: rgb(47, 65, 58);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    h1 {
+                        font-size: 25px;
+                        height: auto;
+                    }
+                }
+                div{
+                    border: 1px solid red;
+                    height: 35px;
+                    width: 80%;
+                    border: 1px solid;
+                    label{
+                        border: 1px solid red;
+                        margin-top: 10px;
+                    }
+                    
+
+                    input{
+                        width: 100%;
+                        height: 50%;
+                        text-align: center;
+                        margin-bottom: 20px;
+
+                        font-size: medium;
+                        border-radius: 10px;
+                        border: none;
+                    }
+                    input::placeholder{
+                        color: rgb(47, 65, 58);
+                        font-size: small;
+                    }
+                }
+                button{
+                    width: 40%;
+                    height: 30px;
+                    margin-bottom: 5px;
+                    border-radius: 10px;
+                    border: none;
+                    font-size: larger;
+                    color: rgb(20, 26, 24);
+                    background-color: rgb(47, 65, 58);
+                }
+            }
+        }
+    }
     .container{
         padding: 0;
         max-width: 480px;
@@ -23,13 +99,14 @@ body{
                 
             }
             .cards{
-                transition-duration: .5s;
+                transition-duration: .3s;
                 display: flex;
                 flex-wrap: wrap;
                 margin-top: 5px;
-                width: 200px;
+                width: 300px;
                 height: 300px;
                 /* border: 2px solid red; */
+                margin-left: 90px;
                 .card{
                     background-color: rgb(46, 46, 48);
                     height: 100%;
@@ -38,9 +115,15 @@ body{
                     img{
                         height: 150px;
                         border-radius: 5px;
+                        transition-duration: .4s;
+                    }
+                    img:hover{
+                        transform: scale(.9);
+                        transition-duration: .3s;
                     }
                 }
                 .card-body{
+                
                     
                     /* border: 2px solid red; */
                     }
@@ -63,11 +146,16 @@ body{
                         background-color:rgb(46, 46, 48) ;
                         color: rgb(212, 217, 220);
                     }
+                    .btn-primary:hover{
+                        outline: none;
+                        border-color: #c5def3c9;
+                        box-shadow: 0 0 10px #c5def3c9;
+                    }
                 }
                 .cards:hover{
-                    transition-duration: .5s;
+                    transition-duration: .3s;
                     border-radius: 6px;
-                    box-shadow: 1px 1px 3px 4px rgba(0, 0, 0, 0.466);
+                    box-shadow: 1px 1px 3px 4px rgba(122, 120, 120, 0.555);
                 }
             }
             /* .cards{
@@ -126,6 +214,22 @@ body{
                 margin: auto;
                 height: 60px;
                 /* border: 3px solid red; */
+                .nav-item{
+                    border-radius: 5px;
+                   transition-duration: .3s;
+                   .nav-link{
+                    border-radius: 5px;
+                   }
+                   .nav-link:hover{
+                    color: rgb(59, 59, 59);
+                    font-weight: bold;
+                   }
+                }
+                .nav-item:hover{
+                    transition-duration: .3s;
+                    border-radius: 5px;
+                    background-color: aliceblue;
+                }
                 form{
                     /* border: 2px solid red; */
                     button{
@@ -144,6 +248,12 @@ body{
             width: 480px;
             top: 0;
             z-index: 10;
+        }
+        .s24-caro{
+            border: 2px solid red;
+            width: 350px;
+            height: 400px;
+            align-items: center;
         }
      
     }
