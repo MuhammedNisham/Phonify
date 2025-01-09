@@ -4,88 +4,85 @@
     box-sizing: border-box;
 }
 body{
+    max-width: 480px;
+    margin-left: 30%;
     background-color: rgb(168, 163, 163);
-    section#login{
-        position: fixed;
-        z-index: 10;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        transition-duration: 0.5s;
-        div{
-            /* border: 1px solid red; */
-            height: 300px;
-            width: 350px;
-            background-color: white;
-            border-radius: 10px;
-            overflow: hidden;
-
-            form.login-form{
-                /* border: 2px solid red; */
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
-                background-color: rgb(74, 107, 95);
-
-                header{
-                    /* border: 1px solid red; */
-                    height: 50px;
-                    background-color: rgb(47, 65, 58);
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 100%;
-                    h1 {
-                        font-size: 25px;
-                        height: auto;
-                    }
-                }
-                div{
-                    border: 1px solid red;
-                    height: 35px;
-                    width: 80%;
-                    border: 1px solid;
-                    label{
-                        border: 1px solid red;
-                        margin-top: 10px;
-                    }
-                    
-
-                    input{
-                        width: 100%;
-                        height: 50%;
-                        text-align: center;
-                        margin-bottom: 20px;
-
-                        font-size: medium;
-                        border-radius: 10px;
-                        border: none;
-                    }
-                    input::placeholder{
-                        color: rgb(47, 65, 58);
-                        font-size: small;
-                    }
-                }
-                button{
-                    width: 40%;
-                    height: 30px;
-                    margin-bottom: 5px;
-                    border-radius: 10px;
-                    border: none;
-                    font-size: larger;
-                    color: rgb(20, 26, 24);
-                    background-color: rgb(47, 65, 58);
-                }
-            }
-        }
-    }
+    
     .container{
         padding: 0;
         max-width: 480px;
         min-height: 100vh;
+        width: 100%;
         margin: auto;
+
+        section#login{
+            position: fixed;
+            z-index: 10;
+            top: 30%;
+            left: 35%;
+            /* border: 1px solid red; */
+            .login-form{
+                /* border: 2px solid blue; */
+                height: 200px;
+                width: 350px;
+                background-color: rgb(46, 46, 48);
+                color: rgb(212, 217, 220);
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+
+                header{
+                    height: 20px;
+                    margin-top: 10px;
+                    h1{
+                        font-size: 30px;
+                    }
+                }
+                div{
+                    height: 30px;
+                    width: 30%;
+                    /* border: 1px solid; */
+                    border-radius: 5px;
+                    display: flex;
+                    margin-right: 40%;
+                    
+                    input{
+                        width: 150px;
+                        height: 80%;
+                        margin-left: 5px;
+                        text-align: center;
+                        font-size: 10px;
+                        border-radius: 5px;
+                        border: none;
+                        background-color: rgb(212, 217, 220);
+                    }
+                    input::placeholder{
+                        color: rgb(47, 65, 58);
+                        /* background-color: blue; */
+                        
+                    }
+                }
+                button{
+                    width: 30%;
+                    height: 50%;
+                    margin-bottom: 20px;
+                    border-radius: 5px;
+                    margin-right: 200px;
+                    margin-left: 135px;
+                    background-color: rgb(212, 217, 220);
+                    transition-duration: .3s;
+                }
+                button:active{
+                    background-color: rgb(47, 65, 58);
+                    color: rgb(212, 217, 220);
+                    box-shadow: 0 0 10px #c5def3c9;
+                    transition-duration: .3s;
+                }
+            }
+        }
+        
         main{
             .carousel{
                 margin-top: 0px;
@@ -158,51 +155,7 @@ body{
                     box-shadow: 1px 1px 3px 4px rgba(122, 120, 120, 0.555);
                 }
             }
-            /* .cards{
-                margin-top: 20px;
-                background-color: rgb(211, 210, 211);
-                height:250px;
-                width: 200px;
-                /* border: 2px solid red; */
-                /* border-radius: 5px;
-                .card-img{
-                    height: 55%;
-                    width: 100%;
-                    img{ */
-                        /* height: 100%;
-                        width: 100%;
-                        border-radius: 5px;
-                    } */
-                /* }
-                .card-body{
-                    display: flex;
-                    align-items: center;
-                    .card-text{
-                        display: flex;
-                        align-items: center;
-                        flex-direction: column;
-                        h3{ */
-                            /* margin-top: px; */
-                            /* margin-left: 25px;
-                        } */
-                        /* p{
-                            margin-top: 4px;
-                            margin-left: 30px;
-                        }
-                        button{
-                            margin-bottom: 20px;
-                            margin-left: 35px;
-                            border-radius: 5px;
-                            background-color:rgb(59, 57, 57) ;
-                            color:rgb(180, 185, 185); ;
-                        }
-                    }
-
-                }
-                cards:hover{
-                    box-shadow: 2px 2px 3px 1px rgb(219, 53, 53);
-                }
-                 */
+           
                
             } 
            
@@ -211,6 +164,7 @@ body{
             nav.navbar{
                 border-radius: 5px;
                 max-width: 480px;
+                width: 100%;
                 margin: auto;
                 height: 60px;
                 /* border: 3px solid red; */
