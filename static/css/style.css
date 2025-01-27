@@ -4,11 +4,38 @@
     box-sizing: border-box;
 }
 body{
+    .footer{
+        padding-top: 10px;
+        padding-bottom: 0px;
+        .container{
+            .foot-head{
+                color:rgb(212, 217, 220) ;
+            }
+            .foot-icon{
+                h5{
+                     
+                    color:rgb(212, 217, 220) ;
+                }
+                .social-icons{
+                    background-color: aliceblue;
+                    img{
+                        margin-left: 80px;
+                    }
+                }
+            }
+        }
+    }
+    hr{
+        color: rgb(212, 217, 220);
+    }
     max-width: 480px;
     margin-left: 30%;
-    background-color: rgb(168, 163, 163);
+    background-color: rgb(65, 64, 64);
     
     .container{
+        h3{
+            color: rgb(212, 217, 220);
+        }
         padding: 0;
         max-width: 480px;
         min-height: 100vh;
@@ -84,6 +111,50 @@ body{
         }
         
         main{
+
+            .s24-dt{
+                margin-top: 20%;
+                h5{
+                    color: rgb(212, 217, 220);
+                }
+            }
+            .details{
+                margin-top: 15%;
+                img{
+                    width: 100%;
+                }
+                p{
+                    color:rgb(212, 217, 220) ;
+                }
+            }
+            section#latest-news{
+                .col-md-4{
+                    /* border: 1px solid red; */
+                    img{
+                        margin-top: 10px;
+                        height: 80%;
+                        transition-duration: .2s;
+                        
+                    }
+                    img:hover{
+                        transform: scale(.97);
+                        transition-duration: .2s;
+                    }
+                }
+                .col-md-8{
+                    .card-body{
+                        h5{
+                            color: rgb(235, 52, 52);
+                        }
+                        h5:hover{
+                            color: blue;
+                        }
+                        p{
+                            color: rgb(47, 65, 58);
+                        }
+                    }
+                }
+            }
             .carousel{
                 margin-top: 0px;
                 .carousel-item{
@@ -115,7 +186,7 @@ body{
                         transition-duration: .4s;
                     }
                     img:hover{
-                        transform: scale(.9);
+                        transform: scale(.97);
                         transition-duration: .3s;
                     }
                 }
@@ -152,7 +223,7 @@ body{
                 .cards:hover{
                     transition-duration: .3s;
                     border-radius: 6px;
-                    box-shadow: 1px 1px 3px 4px rgba(122, 120, 120, 0.555);
+                    box-shadow: 1px 1px 3px 4px rgba(79, 78, 78, 0.555);
                 }
             }
            
